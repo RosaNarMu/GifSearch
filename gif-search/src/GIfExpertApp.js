@@ -1,30 +1,34 @@
 import { useState } from "react"
 import AddCategory from "./components/AddCategory";
+import GifGrid from "./components/GifGrid";
 
 
 export default function GifExpertApp() {
 
 
-  const [categories, setCategories] = useState(['Gatitos', 'Perritos', 'Foquitas']);
+  const [categories, setCategories] = useState(['Gatitos']);
 
-  /*  function handleAdd() {
-     setCategories(categories => ([...categories, 'patata']));
-   } */
 
   return (
     <>
-      <h2>GifExpert</h2>
-      <AddCategory setCategories={setCategories}></AddCategory>
-      <hr />
+      <header>
+
+        <h2 className='gifTitle'>¿Te apetece un gif?</h2>
+        <span>¡Aquí encontrarás todos los que quieras!</span>
+        <AddCategory setCategories={setCategories}></AddCategory>
+      </header>
+
+
 
 
       {
         <ul>
           {
             categories.map(element => (
-              <li key={element}>{element}</li>
-            )
-            )
+              <GifGrid
+                key={element}
+                category={element}></GifGrid>
+            ))
           }
         </ul>
       }

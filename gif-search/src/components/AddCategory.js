@@ -28,8 +28,10 @@ export default function AddCategory({ setCategories }) {
 
                 <input
                     type="text"
+                    placeholder='Introduce tu búsqueda aquí'
                     value={inputValue}
                     onChange={handleInputChange}
+
                 />
             </form>
 
