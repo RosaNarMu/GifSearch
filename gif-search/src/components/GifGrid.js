@@ -1,27 +1,45 @@
-
+/* import { useState, useEffect } from 'react' */
+import getGifs from '../functions/getGIfs';
+import useFetchGifs from '../hooks/useFetchGifs';
+import GifGridItem from './GifGridItem';
 
 export default function GifGrid({ category }) {
 
-    /*  async function getGifs() {
-         const url = 'https://api.giphy.com/v1/gifs/search?api_key=ZQNk3ycp7GilkEZDVfr3v5Q66fBENEOd&q=Gatito&limit=10'
-         const response = await fetch(url);
-         const { data } = await response.json();
- 
-         const gifs = data.map(img => {
-             return {
-                 id: img.id,
-                 title: img.title,
-                 url: img.images.downsized_medium.url
-             }
-         })
-         console.log(gifs);
-     }
- 
-     getGifs(); */
+    /* const [images, setImages] = useState([])
+    
+
+    useEffect(() => {
+        getGifs(category)
+            .then(setImages);
+
+    }, [category]);
+ */
+
+    const { loading } = useFetchGifs();
+
+
+
+
 
     return (
         <>
             <h3>{category}</h3>
+
+            {loading ? 'Cargando...' : 'Data cargada'}
+
+            {/* < div className='card-grid'>
+                {
+                    images.map(element => (
+                        <GifGridItem
+                            key={element.id}
+                            {...element}
+                        ></GifGridItem>
+                    ))
+                }
+
+
+            </div> */}
         </>
     )
 }
+
