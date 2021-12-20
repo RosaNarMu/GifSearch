@@ -30,3 +30,11 @@ REACT_APP_GIPHY_API_KEY=yourkey
 ## Contributing
 
 This is my first project, and because of that any contributions you make are greatly appreciated.
+
+## Screenshots
+
+![This is an image](https://i.imgur.com/Y4PI7GN.png)
+
+![This is an image](https://i.imgur.com/cB2FTxg.png)
+
+![This is an image](https://i.imgur.com/4jGZUeb.png)
