@@ -29,7 +29,7 @@ export default function AddCategory({ setCategories }) {
                 <input
                     className='gifTitle animate__animated animate__pulse animate__delay-1s'
                     type="text"
-                    placeholder='Introduce tu búsqueda aquí'
+                    placeholder='Search here'
                     value={inputValue}
                     onChange={handleInputChange}
 
