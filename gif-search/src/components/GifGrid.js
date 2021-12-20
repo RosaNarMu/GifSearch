@@ -10,9 +10,9 @@ export default function GifGrid({ category }) {
 
     return (
         <>
-            <h3>Has buscado: {category}</h3>
+            <h3>You searched for: {category}</h3>
 
-            {loading && <p>Cargando...</p>}
+            {loading && <p>Loading...</p>}
 
             < div className='card-grid'>
                 {

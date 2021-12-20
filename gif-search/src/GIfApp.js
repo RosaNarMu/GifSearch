@@ -18,8 +18,8 @@ export default function GifApp() {
     <>
       <header>
 
-        <h2 className='gifTitle animate__animated animate__pulse'>¿Te apetece un gif?</h2>
-        {<span className='small-title'>¡Aquí encontrarás todos los que quieras!</span>}
+        <h2 className='gifTitle animate__animated animate__pulse'>Fancy a gif?</h2>
+        {<span className='small-title'>Search for something fun and enjoy!</span>}
         <AddCategory setCategories={setCategories}></AddCategory>
       </header>
 
