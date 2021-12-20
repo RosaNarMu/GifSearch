@@ -15,11 +15,11 @@ export default function AddCategory({ setCategories }) {
         e.preventDefault()
 
         if (inputValue.trim().length > 2) {
-            setCategories(categories => ([inputValue, ...categories])
-            )
-        }
+            setCategories([inputValue]);
 
-    }
+        };
+
+    };
 
 
     return (
@@ -27,7 +27,7 @@ export default function AddCategory({ setCategories }) {
             <form onSubmit={handleSubmit}>
 
                 <input
-                    className='gifTitle animate__animated animate__pulse animate__delay-2s'
+                    className='gifTitle animate__animated animate__pulse animate__delay-1s'
                     type="text"
                     placeholder='Introduce tu búsqueda aquí'
                     value={inputValue}

@@ -1,5 +1,3 @@
-/* import { useState, useEffect } from 'react' */
-import getGifs from '../functions/getGIfs';
 import useFetchGifs from '../hooks/useFetchGifs';
 import GifGridItem from './GifGridItem';
 
@@ -12,7 +10,7 @@ export default function GifGrid({ category }) {
 
     return (
         <>
-            <h3>{category}</h3>
+            <h3>Has buscado: {category}</h3>
 
             {loading && <p>Cargando...</p>}
 

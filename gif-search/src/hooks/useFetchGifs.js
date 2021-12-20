@@ -21,7 +21,5 @@ export default function useFetchGifs(category) {
 
     }, [category])
 
-
-
     return state;
 }
