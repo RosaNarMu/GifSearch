@@ -5,19 +5,8 @@ import GifGridItem from './GifGridItem';
 
 export default function GifGrid({ category }) {
 
-    /* const [images, setImages] = useState([])
-    
 
-    useEffect(() => {
-        getGifs(category)
-            .then(setImages);
-
-    }, [category]);
- */
-
-    const { loading } = useFetchGifs();
-
-
+    const { images, loading } = useFetchGifs(category);
 
 
 
@@ -25,9 +14,9 @@ export default function GifGrid({ category }) {
         <>
             <h3>{category}</h3>
 
-            {loading ? 'Cargando...' : 'Data cargada'}
+            {loading && <p>Cargando...</p>}
 
-            {/* < div className='card-grid'>
+            < div className='card-grid'>
                 {
                     images.map(element => (
                         <GifGridItem
@@ -38,7 +27,7 @@ export default function GifGrid({ category }) {
                 }
 
 
-            </div> */}
+            </div>
         </>
     )
 }

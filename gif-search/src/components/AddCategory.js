@@ -27,6 +27,7 @@ export default function AddCategory({ setCategories }) {
             <form onSubmit={handleSubmit}>
 
                 <input
+                    className='gifTitle animate__animated animate__pulse animate__delay-2s'
                     type="text"
                     placeholder='Introduce tu búsqueda aquí'
                     value={inputValue}

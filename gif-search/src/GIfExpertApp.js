@@ -13,7 +13,7 @@ export default function GifExpertApp() {
     <>
       <header>
 
-        <h2 className='gifTitle'>¿Te apetece un gif?</h2>
+        <h2 className='gifTitle animate__animated animate__pulse'>¿Te apetece un gif?</h2>
         {<span>¡Aquí encontrarás todos los que quieras!</span>}
         <AddCategory setCategories={setCategories}></AddCategory>
       </header>
